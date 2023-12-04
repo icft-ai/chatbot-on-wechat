@@ -1,6 +1,9 @@
 #!/bin/bash
 #后台运行Chat_on_webchat执行脚本
 
+eval "$(conda shell.bash hook)"
+conda activate chatbot-on-wechat
+
 cd `dirname $0`/..
 export BASE_DIR=`pwd`
 echo $BASE_DIR
